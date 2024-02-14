@@ -1,0 +1,161 @@
+/*Fuente para utilizar en la página web*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+/* Básicos */
+
+body {
+  font-family: 'Montserrat';
+  line-height: 1.8;
+  background: #000f21;
+  background: linear-gradient(90deg, #000c1b 39%, #000d1b 72%);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding-top: 170px;
+  padding-bottom: 170px;
+}
+
+/* Nav */
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #fa996c;
+
+  &:hover {
+    color: #fa996c;
+    transition: all 0.5s;
+  }
+}
+
+.navbar .navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+  margin: 5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #fa996c;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    color: #fa996c;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+#active {
+  color: #fa996c;
+
+  &::after {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #24262b;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .social-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+    li {
+      list-style: none;
+
+      a {
+        font-size: 2em;
+        color: white;
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+
+        &:hover {
+          transform: translateY(-10px);
+        }
+      }
+    }
+  }
+
+  p {
+    color: white;
+    text-align: center;
+    margin: 15px;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+/* Media */
+
+@media (max-width: 991px) {
+  .navbar {
+    background-color: #202631;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  #hero img {
+    width: 450px;
+    margin-top: 50px;
+    position: center;
+  }
+}}

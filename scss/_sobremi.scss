@@ -1,0 +1,71 @@
+/* Sobre mi */
+
+#sobmi {
+    margin-top: 120px;
+  }
+  
+  #tituloam {
+    color: #fa996c;
+  }
+  
+  .am-titulo {
+    h2 {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 0;
+      line-height: 1px;
+      margin: 0 0 20px 0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #aaaaaa;
+      font-family: "Poppins", sans-serif;
+  
+      &::after {
+        content: "";
+        width: 120px;
+        height: 1px;
+        display: inline-block;
+        background: #fa996c;
+        margin: 4px 10px;
+      }
+    }
+  
+    p {
+      margin: 0;
+      margin: -15px 0 15px 0;
+      font-size: 36px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+      color: #fa996c;
+    }
+  }
+  
+  .about-me {
+    .contact h3 {
+      font-weight: 700;
+      font-size: 26px;
+      color: #fa996c;
+    }
+  
+    .content {
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          padding-bottom: 10px;
+        }
+  
+        i {
+          font-size: 20px;
+          padding-right: 2px;
+          color: #fa996c;
+        }
+      }
+  
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
